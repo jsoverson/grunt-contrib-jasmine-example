@@ -1,0 +1,21 @@
+{
+  "name"            : "grunt-jasmine-runner-example",
+  "description"     : "Example application using grunt-jasmine-runner",
+  "version"         : "0.1.0",
+  "homepage"        : "https://github.com/jsoverson/grunt-jasmine-runner-example",
+  "author"          : {
+    "name"  : "Jarrod Overson",
+    "email" : "jsoverson@gmail.com",
+    "url"   : "http://jarrodoverson.com/"
+  },
+  "repository"      : {
+    "type" : "git",
+    "url"  : "git://github.com/jsoverson/grunt-jasmine-runner-example.git"
+  },
+  "bugs"            : {
+    "url" : "https://github.com/jsoverson/grunt-jasmine-runner-example/issues"
+  },
+  "devDependencies" : {
+    "grunt-jasmine-runner" : "0.5.2"
+  }
+}
