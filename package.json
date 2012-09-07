@@ -12,10 +12,13 @@
     "type" : "git",
     "url"  : "git://github.com/jsoverson/grunt-jasmine-runner-example.git"
   },
+  "scripts"         : {
+    "test" : "grunt jasmine"
+  },        
   "bugs"            : {
     "url" : "https://github.com/jsoverson/grunt-jasmine-runner-example/issues"
   },
   "devDependencies" : {
-    "grunt-jasmine-runner" : "0.5.2"
+    "grunt-jasmine-runner" : "latest"
   }
 }

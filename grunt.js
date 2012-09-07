@@ -41,8 +41,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-jasmine-runner');
 
-  // Load local tasks.
-  grunt.loadTasks('tasks');
 
   // Default task.
   grunt.registerTask('default', 'lint jasmine');
