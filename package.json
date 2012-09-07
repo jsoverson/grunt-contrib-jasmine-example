@@ -19,6 +19,7 @@
     "url" : "https://github.com/jsoverson/grunt-jasmine-runner-example/issues"
   },
   "devDependencies" : {
-    "grunt-jasmine-runner" : "latest"
+    "grunt-jasmine-runner" : "latest",
+    "grunt"         : "~0.3.9"
   }
 }
