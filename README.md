@@ -1,6 +1,8 @@
 grunt-jasmine-runner-example
 ============================
 
+[![Build Status](https://secure.travis-ci.org/jsoverson/grunt-jasmine-runner-example.png)](http://travis-ci.org/jsoverson/grunt-jasmine-runner-example)
+
 Example setup for grunt-jasmine-runner.
 
 Browse the source for an example of how to set up your tests to be run via grunt-jasmine-runner.
