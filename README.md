@@ -34,5 +34,5 @@ The example application source is copyright Pivotal Labs and licensed under the 
 All other configuration code is public domain
 
 ### Author
-
+ 
 All code not coming from Pivotal Labs was written by Jarrod Overson
