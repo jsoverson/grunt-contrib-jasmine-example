@@ -1,38 +1,32 @@
-grunt-jasmine-runner-example
-============================
+# grunt-contrib-jasmine-example [![Build Status](https://secure.travis-ci.org/jsoverson/grunt-contrib-jasmine-example.png?branch=master)](http://travis-ci.org/jsoverson/grunt-contrib-jasmine-example)
 
-[![Build Status](https://secure.travis-ci.org/jsoverson/grunt-jasmine-runner-example.png)](http://travis-ci.org/jsoverson/grunt-jasmine-runner-example)
+> Example application using grunt-contrib-jasmine
 
-Example setup for grunt-jasmine-runner.
+## Getting Started
+_If you haven't used [grunt][] before, be sure to check out the [Getting Started][] guide._
 
-Browse the source for an example of how to set up your tests to be run via grunt-jasmine-runner.
+From the same directory as your project's [Gruntfile][Getting Started] and [package.json][], install this plugin with the following command:
 
-The application here is the Jasmine example application. The only changes made were jshint comments to allow the linter to pass.
+```bash
+npm install grunt-contrib-jasmine --save-dev
+```
 
-Clone this repo and then run `npm install` to install grunt-jasmine-runner
+Once that's done, add this line to your project's Gruntfile:
 
-## Running tests headlessly
+```js
+grunt.loadNpmTasks('grunt-contrib-jasmine');
+```
 
-`grunt jasmine`
+If the plugin has been installed correctly, running `grunt --help` at the command line should list the newly-installed plugin's task or tasks. In addition, the plugin should be listed in package.json as a `devDependency`, which ensures that it will be installed whenever the `npm install` command is run.
 
-Or to run the default tasks (lint + jasmine) :
+[grunt]: http://gruntjs.com/
+[Getting Started]: https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md
+[package.json]: https://npmjs.org/doc/json.html
 
-`grunt`
+## The jasmine task
 
-## Running tests in a browser
 
-`grunt jasmine-server`
+## Release History
 
-### PhantomJS
+ * 2012-11-08 - v0.1.0 - Initial release
 
-This plugin requires phantomjs to run tests headlessly. Get it at [phantomjs.org](http://phantomjs.org/)
-
-### License
-
-The example application source is copyright Pivotal Labs and licensed under the MIT license.
-
-All other configuration code is public domain
-
-### Author
- 
-All code not coming from Pivotal Labs was written by Jarrod Overson

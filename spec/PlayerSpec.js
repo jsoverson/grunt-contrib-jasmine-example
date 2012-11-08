@@ -1,3 +1,5 @@
+'use strict';
+
 /*globals Player:false, Song: false*/
 
 describe("Player", function() {

@@ -1,3 +1,5 @@
+'use strict';
+
 function Player() {
 }
 Player.prototype.play = function(song) {

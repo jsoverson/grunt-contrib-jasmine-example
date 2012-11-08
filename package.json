@@ -1,25 +1,28 @@
 {
-  "name"            : "grunt-jasmine-runner-example",
-  "description"     : "Example application using grunt-jasmine-runner",
-  "version"         : "0.1.1",
-  "homepage"        : "https://github.com/jsoverson/grunt-jasmine-runner-example",
-  "author"          : {
-    "name"  : "Jarrod Overson",
-    "email" : "jsoverson@gmail.com",
-    "url"   : "http://jarrodoverson.com/"
+  "name": "grunt-contrib-jasmine-example",
+  "description": "Example application using grunt-contrib-jasmine",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jsoverson/grunt-contrib-jasmine-example",
+  "author": {
+    "name": "Jarrod Overson",
+    "email": "jsoverson@gmail.com",
+    "url": "http://jarrodoverson.com/"
   },
-  "repository"      : {
-    "type" : "git",
-    "url"  : "git://github.com/jsoverson/grunt-jasmine-runner-example.git"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jsoverson/grunt-contrib-jasmine-example.git"
   },
-  "scripts"         : {
-    "test" : "grunt jasmine"
-  },        
-  "bugs"            : {
-    "url" : "https://github.com/jsoverson/grunt-jasmine-runner-example/issues"
+  "scripts": {
+    "test": "grunt jasmine"
   },
-  "devDependencies" : {
-    "grunt-jasmine-runner" : "latest",
-    "grunt"         : "~0.3.9"
-  }
+  "bugs": {
+    "url": "https://github.com/jsoverson/grunt-contrib-jasmine-example/issues"
+  },
+  "devDependencies": {
+    "grunt-contrib-jasmine": "latest",
+    "grunt": "~0.4.0a",
+    "grunt-contrib-jshint": "~0.1.0",
+    "grunt-contrib-watch": "~0.1.4"
+  },
+  "dependencies": {}
 }
