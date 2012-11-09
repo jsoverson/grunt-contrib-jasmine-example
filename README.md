@@ -5,25 +5,35 @@
 ## Getting Started
 _If you haven't used [grunt][] before, be sure to check out the [Getting Started][] guide._
 
-From the same directory as your project's [Gruntfile][Getting Started] and [package.json][], install this plugin with the following command:
+From the same directory as your project's [Gruntfile][Getting Started] and [package.json][], install the project's dependencies
 
 ```bash
-npm install grunt-contrib-jasmine --save-dev
+npm install
 ```
 
-Once that's done, add this line to your project's Gruntfile:
+Once that's done, you can run the jasmine unit tests via
 
 ```js
-grunt.loadNpmTasks('grunt-contrib-jasmine');
+grunt jasmine
 ```
 
-If the plugin has been installed correctly, running `grunt --help` at the command line should list the newly-installed plugin's task or tasks. In addition, the plugin should be listed in package.json as a `devDependency`, which ensures that it will be installed whenever the `npm install` command is run.
+`package.json` allows you to define the script to execute when you run 'npm test'
+
+```json
+"scripts": {
+  "test": "grunt test"
+},
+```
+
+`grunt test` is registered to run `['jshint', 'jasmine']` to thoroughly test your code.
+
+```js
+grunt.registerTask('test', ['jshint', 'jasmine']);
+```
 
 [grunt]: http://gruntjs.com/
 [Getting Started]: https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md
 [package.json]: https://npmjs.org/doc/json.html
-
-## The jasmine task
 
 
 ## Release History
