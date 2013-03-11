@@ -3,27 +3,17 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    meta : {
-      src   : 'src/**/*.js',
-      specs : 'spec/**/*.js'
-    },
-    watch: {
-      test : {
-        files: ['<%= meta.src %>','<%= meta.specs %>'],
-        tasks: 'test'
-      }
-    },
     jasmine : {
-      src : '<%= meta.src %>',
+      src : 'src/**/*.js',
       options : {
-        specs : '<%= meta.specs %>'
+        specs : 'spec/**/*.js'
       }
     },
     jshint: {
       all: [
         'Gruntfile.js',
-        '<%= meta.src %>',
-        '<%= meta.specs %>'
+        'src/**/*.js',
+        'spec/**/*.js'
       ],
       options: {
         jshintrc: '.jshintrc'
@@ -33,11 +23,9 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('test', ['jshint', 'jasmine']);
 
-  // Default task.
   grunt.registerTask('default', ['test']);
 
 };
